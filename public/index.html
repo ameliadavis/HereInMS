@@ -166,10 +166,7 @@
             <div class="uk-container uk-container-small FormCard">
                     <div class="uk-card uk-card-body contactFormCard">
 
-                            <?php if(!empty($statusMsg)){ ?>
-                                <p class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
-                            <?php } ?>
-                           
+                          
                             <form  id ="contactForm" action="./uploads/" method="POST" enctype="multipart/form-data">
                                 <!-- <form action="https://mailthis.to/Ameliaaltman22@gmail.com" method="POST" enctype="multipart/form-data">  -->
                                 <div class="uk-align-center uk-animation-scale-up ">
@@ -202,7 +199,7 @@
                                                 </div> 
                                         <!-- </form> -->
                                         <div class="uk-margin">
-                                            <textarea class="uk-textarea" rows="5" id="text" placeholder="Message" value="<?php echo !empty($postData['text'])?$postData['text']:''; ?>" required=""></textarea>
+                                            <textarea class="uk-textarea" rows="5" id="text" placeholder="Message" required=""></textarea>
                                         </div>   
                                         <button class="uk-button uk-button-default uk-button-small FormSubmitButton uk-align-right" id="formButton1" name=submit value="SUBMIT">Submit</button>                             
                                     </fieldset>

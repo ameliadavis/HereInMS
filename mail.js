@@ -13,19 +13,6 @@ const auth = {
 const transporter= nodemailer.createTransport(mailGun(auth));
 
 const sendMail = (data) => {
-    // formFills = JSON.stringify(data);
-    // console.log( "in sendmail function", formFills )
-    // email = formfills.map()
-    // console.log(data.email)
-
-    // emailBody = {
-    //     name = data.name,
-    //     text= data.text, 
-    //     ista= data.igHandle, 
-    //     email = data.email
-    // }
-    // var readstream = fs.createReadStream()
-
 
     const mailOptions = {
         from: data.email, 
